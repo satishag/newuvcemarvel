@@ -1,4 +1,4 @@
-import { Printer, Cpu, Bot, Monitor, ActivitySquare, Plane, Zap } from 'lucide-react';
+import { Printer, Cpu, Bot, Monitor, ActivitySquare, Plane } from 'lucide-react';
 import './Equipment.css';
 
 const Equipment = () => {
