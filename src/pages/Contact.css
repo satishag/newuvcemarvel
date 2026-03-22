@@ -1,0 +1,222 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding-bottom: 4rem;
+}
+
+.contact-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3.5rem !important;
+  transition: transform 0.4s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,0.3);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.card-header h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(135deg, #fff, rgba(255,255,255,0.7));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-desc {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Alumni specific */
+.help-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.help-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.03);
+  transition: transform 0.3s ease, border-color 0.3s;
+}
+
+.help-item:hover {
+  transform: translateX(10px);
+  border-color: var(--accent);
+}
+
+.help-item h4 {
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+}
+
+.help-item p {
+  margin: 0;
+  font-size: 1.05rem;
+  opacity: 0.7;
+}
+
+/* Student Specific Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  margin-left: 0.5rem;
+}
+
+.glass-input {
+  width: 100%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-family: inherit;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.glass-input:focus {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(0,210,255,0.2);
+}
+
+.glass-input::placeholder {
+  color: rgba(255,255,255,0.3);
+}
+
+.contact-btn {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent-secondary), var(--accent));
+  border: 1px solid rgba(255,255,255,0.3);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,210,255,0.4);
+}
+
+/* Social Media Section */
+.social-section {
+  text-align: center;
+  padding: 4rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.social-section p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2.5rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.social-link.linkedin:hover {
+  background: #0077b5;
+  border-color: #0077b5;
+  box-shadow: 0 10px 25px rgba(0, 119, 181, 0.4);
+  transform: translateY(-5px);
+}
+
+.social-link.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-color: #dc2743;
+  box-shadow: 0 10px 25px rgba(220, 39, 67, 0.4);
+  transform: translateY(-5px);
+}
+
+.social-link.email:hover {
+  background: #ea4335;
+  border-color: #ea4335;
+  box-shadow: 0 10px 25px rgba(234, 67, 53, 0.4);
+  transform: translateY(-5px);
+}
+
+@media screen and (max-width: 1024px) {
+  .contact-split {
+    grid-template-columns: 1fr;
+  }
+}
