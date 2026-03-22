@@ -22,7 +22,7 @@ const Navbar = () => {
           <NavLink 
             key={link.path} 
             to={link.path} 
-            className={({ isActive }: { isActive: boolean }) => `nav-link ${isActive ? 'active' : ''}`}
+            className={(navData: any) => `nav-link ${navData.isActive ? 'active' : ''}`}
           >
             {link.name}
           </NavLink>
